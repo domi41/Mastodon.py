@@ -1793,7 +1793,7 @@ class Mastodon:
         keyword_args["in_reply_to_id"] = to_status.id
         return self.status_post(**keyword_args)
     
-    @api_version("2.8.0", "2.8.0", __DICT_VERSION_POLL)
+    @api_version("2.7.0", "2.8.0", __DICT_VERSION_POLL)
     def make_poll(self, options, expires_in, multiple=False, hide_totals=False):
         """
         Generate a poll object that can be passed as the `poll` option when posting a status.
